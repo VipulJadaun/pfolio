@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="col-12">
+      <div class="col-6">
+        <a href="/" style="text-decoration: none; color: black"
+          ><h2>Vipul <span style="color: #ff6347">Jadaun</span></h2></a
+        >
+      </div>
+      <div class="col-6 nav-items">
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Us</a>
+        <button class="download-btn">
+          <a
+            href="../images/vipul_jadaun_web.pdf"
+            download="../images/vipul_jadaun_web.pdf"
+            >Download Resume</a
+          >
+        </button>
+      </div>
+      <div class="hamburger" id="hamburger"><i class="ri-menu-line"></i></div>
+    </div>
+    <script>
+      addEventListener("DOMContentLoaded", function () {
+        var ham = document.querySelector("#hamburger i");
+
+        if (ham) {
+          ham.addEventListener("click", function () {
+            console.log("df");
+          });
+        } else {
+          console.log("Hamburger not found.");
+        }
+      });
+    </script>
+  </body>
+</html>
